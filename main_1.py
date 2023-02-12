@@ -1,3 +1,5 @@
+#import, mydb e i cursori non serve ripeterli, basta dichiararli una volta sola
+
 #creare un database in mysql
 
 import mysql.connector
