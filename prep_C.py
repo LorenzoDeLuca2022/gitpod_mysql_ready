@@ -1,3 +1,6 @@
+#Scrivi un programma che stampi gli animali inseriti al punto B
+
+
 import mysql.connector
 
 mydb = mysql.connector.connect(

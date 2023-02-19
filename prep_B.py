@@ -1,3 +1,7 @@
+#Scrivi un programma che inserisce all’interno del DB 5 Animali
+#Verifica tramite la console dei comandi di aver inserito gli animali nel DB
+
+
 import mysql.connector
 
 mydb = mysql.connector.connect(
