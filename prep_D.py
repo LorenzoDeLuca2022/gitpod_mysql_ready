@@ -17,8 +17,8 @@ mycursor = mydb.cursor()
 for x in range(2):
     Nome = input("Inserisci il nome del nuovo animale: ");
     Razza = input("Inserisci la razza del nuovo animale: ");
-    Peso = input("Inserisci il peso del nuovo animale: ");
-    Eta = input("Inserisci l'eta del nuovo animale: ");
+    Peso = int(input("Inserisci il peso del nuovo animale: "));
+    Eta =int(input("Inserisci l'eta del nuovo animale: "));
 
     query = "INSERT INTO Mammiferi (Nome_proprio, Razza, Peso, Eta) VALUES (%s,%s,%d,%d)"
     values = ( Nome, Razza, Peso, Eta)
