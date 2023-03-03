@@ -14,13 +14,13 @@ mydb = mysql.connector.connect(
 
 mycursor = mydb.cursor()
 
-for x in range(2):
+for x in range(5):
     Nome = input("Inserisci il nome del nuovo animale: ");
     Razza = input("Inserisci la razza del nuovo animale: ");
     Peso = int(input("Inserisci il peso del nuovo animale: "));
     Eta =int(input("Inserisci l'eta del nuovo animale: "));
 
-    query = "INSERT INTO Mammiferi (Nome_proprio, Razza, Peso, Eta) VALUES (%s,%s,%d,%d)"
+    query = "INSERT INTO Mammiferi (Nome_proprio, Razza, Peso, Eta) VALUES (%s,%s,%s,%s)"
     values = ( Nome, Razza, Peso, Eta)
     mycursor.execute(query, values)
     mydb.commit()
